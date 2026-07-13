@@ -1,10 +1,3 @@
-//
-//  Walley_ProApp.swift
-//  Walley Pro
-//
-//  Created by Sai Karthik on 24/05/26.
-//
-
 import SwiftUI
 
 @main

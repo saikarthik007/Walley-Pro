@@ -1,21 +1,18 @@
-//
-//  ContentView.swift
-//  Walley Pro
-//
-//  Created by Sai Karthik on 24/05/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView()
+                .tabItem {
+                    Label("Wallpapers", systemImage: "photo.on.rectangle.angled")
+                }
+
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
         }
-        .padding()
     }
 }
 
